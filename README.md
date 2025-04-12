@@ -29,11 +29,36 @@ Example queries:
 - Google ADK (Agent Development Kit)
 - Gemini 2.0 Flash model
 
-## Installation
+## Installation and Setup
 
 1. Clone this repository
-2. Install the required dependencies
-3. Set up your environment with the necessary API keys and configurations
+2. Create and activate a Python virtual environment:
+   ```bash
+   # Create virtual environment
+   python -m venv venv
+
+   # Activate virtual environment
+   # On Windows:
+   .\venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up your environment with the necessary API keys and configurations
+
+## Running the Agent
+
+To execute the agent, run:
+```bash
+python agent.py
+```
+
+The agent will start and be ready to accept queries about weather and time information for supported cities.
 
 ## Note
 
