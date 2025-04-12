@@ -25,7 +25,6 @@ def get_weather(city: str) -> dict:
             "error_message": f"Weather information for '{city}' is not available.",
         }
 
-
 def get_current_time(city: str) -> dict:
     """Returns the current time in a specified city.
 
@@ -52,7 +51,6 @@ def get_current_time(city: str) -> dict:
         f'The current time in {city} is {now.strftime("%Y-%m-%d %H:%M:%S %Z%z")}'
     )
     return {"status": "success", "report": report}
-
 
 root_agent = Agent(
     name="weather_time_agent",
